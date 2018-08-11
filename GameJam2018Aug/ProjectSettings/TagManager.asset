@@ -3,9 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - water
   - Walls
+=======
+  tags: []
+>>>>>>> 1852893dc5f0db78c5719d132300a1c16bff3768
   layers:
   - Default
   - TransparentFX
@@ -15,10 +19,17 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - WaterFront
   - Enemy
   - Walls
   - Player
+=======
+  - 
+  - 
+  - 
+  - 
+>>>>>>> 1852893dc5f0db78c5719d132300a1c16bff3768
   - 
   - 
   - 
