@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 337431611}
   - component: {fileID: 337431610}
   - component: {fileID: 337431609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 568163290}
   - component: {fileID: 568163289}
   - component: {fileID: 568163288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,11 +515,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4740535574121774, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -34.51
+      value: -30.14
       objectReference: {fileID: 0}
     - target: {fileID: 4740535574121774, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.31
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 4740535574121774, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -556,12 +556,12 @@ Prefab:
     - target: {fileID: 50704667882939278, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
         type: 2}
       propertyPath: m_GravityScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 50704667882939278, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
         type: 2}
       propertyPath: m_Mass
-      value: 1
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 212863100328535850, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
         type: 2}
@@ -629,8 +629,40 @@ Prefab:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallJumpClimb.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallJumpClimb.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallJumpOff.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallJumpOff.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallLeap.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922278398581568, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
+        type: 2}
+      propertyPath: wallLeap.y
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61106987380180882, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
+    - {fileID: 114219686622278264, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
+    - {fileID: 114824591652482958, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a47d2a1979e1e484388fc2b04ae9a4a1, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &661307873
@@ -643,7 +675,7 @@ GameObject:
   - component: {fileID: 661307876}
   - component: {fileID: 661307875}
   - component: {fileID: 661307874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plant-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +776,7 @@ GameObject:
   - component: {fileID: 686695271}
   - component: {fileID: 686695270}
   - component: {fileID: 686695269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +867,7 @@ GameObject:
   - component: {fileID: 769002856}
   - component: {fileID: 769002855}
   - component: {fileID: 769002854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +968,7 @@ GameObject:
   - component: {fileID: 886895605}
   - component: {fileID: 886895604}
   - component: {fileID: 886895603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1069,7 @@ GameObject:
   - component: {fileID: 911066714}
   - component: {fileID: 911066713}
   - component: {fileID: 911066712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1170,7 @@ GameObject:
   - component: {fileID: 1053902541}
   - component: {fileID: 1053902540}
   - component: {fileID: 1053902539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plant-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1271,7 @@ GameObject:
   - component: {fileID: 1065383536}
   - component: {fileID: 1065383535}
   - component: {fileID: 1065383534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1456,7 @@ GameObject:
   - component: {fileID: 1159811963}
   - component: {fileID: 1159811962}
   - component: {fileID: 1159811961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1547,7 @@ GameObject:
   - component: {fileID: 1294285857}
   - component: {fileID: 1294285856}
   - component: {fileID: 1294285855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,6 +1643,56 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1677727467641170, guid: a47d2a1979e1e484388fc2b04ae9a4a1,
     type: 2}
   m_PrefabInternal: {fileID: 603898787}
+--- !u!114 &1372341786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372341785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a22a7865203c2349b73f2ac75ed7a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  timeToJumpApex: 0.4
+  jumpHeight: 0
+  sinkSpeedMax: 3
+--- !u!114 &1372341787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372341785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28a193dd82e5d1409dce4fa6a2661ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  spriterenderer: {fileID: 0}
+--- !u!114 &1372341788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372341785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768a662ac96e2384abfc27a4951f5e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 256
+  collisionMaskWater:
+    serializedVersion: 2
+    m_Bits: 16
+  horizontalRayCount: 4
+  verticalRayCount: 4
+  horizontalRaySpacing: 0
+  verticalRaySpacing: 0
+  collider: {fileID: 0}
 --- !u!95 &1372341790
 Animator:
   serializedVersion: 3
@@ -1765,7 +1847,7 @@ GameObject:
   - component: {fileID: 1616957466}
   - component: {fileID: 1616957465}
   - component: {fileID: 1616957464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,7 +1938,7 @@ GameObject:
   - component: {fileID: 1635413889}
   - component: {fileID: 1635413891}
   - component: {fileID: 1635413890}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: water
   m_TagString: water
   m_Icon: {fileID: 0}
@@ -1934,7 +2016,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 343076503
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.032707386, g: 0.5598452, b: 0.990566, a: 0.3372549}
@@ -2200,7 +2282,7 @@ GameObject:
   - component: {fileID: 1892235091}
   - component: {fileID: 1892235090}
   - component: {fileID: 1892235089}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2291,7 +2373,7 @@ GameObject:
   - component: {fileID: 1962599840}
   - component: {fileID: 1962599839}
   - component: {fileID: 1962599838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2493,7 +2575,7 @@ GameObject:
   - component: {fileID: 2033082673}
   - component: {fileID: 2033082672}
   - component: {fileID: 2033082671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,7 +2777,7 @@ GameObject:
   - component: {fileID: 2080166634}
   - component: {fileID: 2080166633}
   - component: {fileID: 2080166632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6679,7 +6761,7 @@ GameObject:
   - component: {fileID: 2123709495}
   - component: {fileID: 2123709494}
   - component: {fileID: 2123709493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

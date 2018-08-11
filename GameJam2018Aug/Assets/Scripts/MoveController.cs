@@ -23,17 +23,7 @@ public class MoveController : MonoBehaviour {
     {
         
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            spriterenderer.flipX = false;
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            spriterenderer.flipX = true;
-            
-        }
+        
         currentMovement.Move(myRigidbody2D);
 
         
