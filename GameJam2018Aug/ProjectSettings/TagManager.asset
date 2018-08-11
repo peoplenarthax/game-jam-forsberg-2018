@@ -42,3 +42,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
+  - name: background
+    uniqueID: 509531491
+=======
+  - name: Player
+    uniqueID: 502323561
+    locked: 0
+  - name: Water
+    uniqueID: 343076503
+>>>>>>> ca5b79db6c0348487330f16b6d49172d806300d4
+    locked: 0
