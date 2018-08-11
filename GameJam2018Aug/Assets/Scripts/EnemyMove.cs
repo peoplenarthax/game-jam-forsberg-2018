@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour {
 
     public float DefaultSpeed;
+    public float Speed;
     public float TurningSpeed;
 
     public bool isWalking;
@@ -24,6 +25,7 @@ public class EnemyMove : MonoBehaviour {
     void Start()
     {
         Animator animator = GetComponent<Animator>();
+        Speed = DefaultSpeed;
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class EnemyMove : MonoBehaviour {
 
         if (isWalking)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * DefaultSpeed);
+            transform.Translate(Vector3.up * Time.deltaTime * Speed);
         }
 
         if (isTurning)
