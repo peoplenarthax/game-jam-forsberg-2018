@@ -15,11 +15,12 @@ public class EnemyChaseState : EnemyAIState
 
     public override void OnStateExit(EnemyAI enemyAI)
     {
-//        
+        enemyMove.Speed = enemyMove.DefaultSpeed;
     }
 
     public override void OnStateUpdate(EnemyAI enemyAI)
     {
+        enemyMove.Speed = ChaseSpeed;
         enemyMove.WalkTo(ChaseTarget.transform);
     }
 }

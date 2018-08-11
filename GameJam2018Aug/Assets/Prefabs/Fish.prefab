@@ -9,20 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1438327674354266}
+  m_RootGameObject: {fileID: 1566738925411044}
   m_IsPrefabAsset: 1
---- !u!1 &1438327674354266
+--- !u!1 &1566738925411044
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4396530808801524}
-  - component: {fileID: 212096071089775406}
-  - component: {fileID: 61279337352764510}
-  - component: {fileID: 114710860463859970}
-  - component: {fileID: 50354308941222644}
+  - component: {fileID: 4748861336312920}
+  - component: {fileID: 212813695000922106}
+  - component: {fileID: 61357276836248886}
+  - component: {fileID: 114008241491220936}
+  - component: {fileID: 50853120033729778}
+  - component: {fileID: 114662756654603466}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -30,26 +31,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4396530808801524
+--- !u!4 &4748861336312920
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438327674354266}
+  m_GameObject: {fileID: 1566738925411044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.7, y: 8.3, z: -0.011199173}
+  m_LocalPosition: {x: -2.6707478, y: 1.1531258, z: -0.011199173}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50354308941222644
+--- !u!50 &50853120033729778
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438327674354266}
+  m_GameObject: {fileID: 1566738925411044}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -57,18 +58,18 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61279337352764510
+--- !u!61 &61357276836248886
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438327674354266}
+  m_GameObject: {fileID: 1566738925411044}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -88,28 +89,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.428281, y: 5.814437}
   m_EdgeRadius: 0
---- !u!114 &114710860463859970
+--- !u!114 &114008241491220936
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438327674354266}
+  m_GameObject: {fileID: 1566738925411044}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afcc62267ea1f4af5a4d8d911de3abdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedMultiplier: 10
-  VerticalMultiplier: 20
   x_velocity: 0
   y_velocity: 0
-  myRigidbody2D: {fileID: 0}
---- !u!212 &212096071089775406
+  myRigidbody2D: {fileID: 50853120033729778}
+  currentMovement: {fileID: 0}
+  waterMovement: {fileID: 114662756654603466}
+  landMovement: {fileID: 0}
+--- !u!114 &114662756654603466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1566738925411044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7842348f0c955da4db99df0c7b79cbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedMultiplier: 10
+  VerticalMultiplier: 10
+--- !u!212 &212813695000922106
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438327674354266}
+  m_GameObject: {fileID: 1566738925411044}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
