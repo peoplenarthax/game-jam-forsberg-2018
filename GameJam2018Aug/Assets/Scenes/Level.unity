@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 784380564}
   - component: {fileID: 784380563}
   - component: {fileID: 784380562}
+  - component: {fileID: 784380565}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -323,8 +324,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcc62267ea1f4af5a4d8d911de3abdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedMultiplier: 10
-  VerticalMultiplier: 20
+  x_velocity: 0
+  y_velocity: 0
+  myRigidbody2D: {fileID: 0}
+  currentMovement: {fileID: 0}
+  waterMovement: {fileID: 0}
 --- !u!61 &784380564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -350,6 +354,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.428281, y: 5.814437}
   m_EdgeRadius: 0
+--- !u!114 &784380565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 784380559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7842348f0c955da4db99df0c7b79cbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedMultiplier: 10
+  VerticalMultiplier: 20
 --- !u!1 &1088580209
 GameObject:
   m_ObjectHideFlags: 0
