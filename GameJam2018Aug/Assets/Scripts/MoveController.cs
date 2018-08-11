@@ -8,15 +8,32 @@ public class MoveController : MonoBehaviour {
     public Movement currentMovement;
     public WaterMovement waterMovement;
     public LandMovement landMovement;
+    public Animator anim;
+    public SpriteRenderer spriterenderer;
     // Use this for initialization
     void Start () {
+        anim = GetComponent<Animator>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
         currentMovement = GetComponent<LandMovement>();
+        spriterenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            spriterenderer.flipX = false;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            spriterenderer.flipX = true;
+            
+        }
         currentMovement.Move(myRigidbody2D);
 
         
@@ -26,6 +43,7 @@ public class MoveController : MonoBehaviour {
     {
         if ( collision.tag == "water")
         {
+            anim.SetBool("inWater",true);
             currentMovement = GetComponent<WaterMovement>();
         }
     }
