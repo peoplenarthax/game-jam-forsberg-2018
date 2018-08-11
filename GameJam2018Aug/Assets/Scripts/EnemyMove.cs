@@ -12,6 +12,7 @@ public class EnemyMove : MonoBehaviour {
     public bool isTurning;
     public bool isMovingToTarget;
 
+    [SerializeField]
     private bool IsBlocked;
 
     public Transform Target;
@@ -22,9 +23,11 @@ public class EnemyMove : MonoBehaviour {
 
     Animator animator;
 
+
+    private RaycastHit2D frontRaycast2D;
     void Start()
     {
-        Animator animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         Speed = DefaultSpeed;
     }
 
@@ -47,6 +50,7 @@ public class EnemyMove : MonoBehaviour {
             // Slerp to it over time:
             //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), TurningSpeed * Time.deltaTime);
+
         }
 
         if (isMovingToTarget)
@@ -60,11 +64,21 @@ public class EnemyMove : MonoBehaviour {
 
         if (IsBlocked)
         {
+
             StopWalking();
         }
 
+        CheckRayCast2D();
 
+    }
 
+    public void CheckRayCast2D(){
+        frontRaycast2D = Physics2D.Raycast(transform.position, transform.forward, 100f);
+       
+    }
+
+    public void FinishLookedAt(){
+        IsBlocked = false;
     }
 
     public void Walk()
@@ -135,7 +149,7 @@ public class EnemyMove : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("WaterFront"))
         {
             IsBlocked = true;
             Stop();
@@ -144,7 +158,7 @@ public class EnemyMove : MonoBehaviour {
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("WaterFront"))
         {
             IsBlocked = false;
             Stop();
@@ -157,5 +171,6 @@ public class EnemyMove : MonoBehaviour {
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(TargetPosition, 0.2f);
+        Debug.DrawLine(transform.position, transform.forward * 100, Color.red);
     }
 }
