@@ -9,5 +9,17 @@ public class LandMovement : Movement
         {
             rigidBody.velocity = Vector2.up * VerticalMultiplier;
         }
+
+        Debug.Log(rigidBody.velocity.x);
+        Debug.Log(rigidBody.velocity.y);
+
+        if (rigidBody.velocity.y > MAX_SPEED)
+        {
+            rigidBody.velocity = Vector3.ClampMagnitude(
+                rigidBody.velocity,
+                MAX_SPEED
+           );
+            Debug.Log(rigidBody.velocity);
+        }
     }
 }

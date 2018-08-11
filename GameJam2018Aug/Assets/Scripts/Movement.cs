@@ -2,6 +2,7 @@
 
 public abstract class Movement : MonoBehaviour 
 {
+    public float MAX_SPEED = 3f;
     public float SpeedMultiplier;
     public float VerticalMultiplier;
     public abstract void Move(Rigidbody2D rigidbody);

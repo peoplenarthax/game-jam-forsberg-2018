@@ -5,5 +5,6 @@ public class WaterMovement : Movement {
     {
         rigidBody.velocity = new Vector3(GetXAxis() * SpeedMultiplier, rigidBody.velocity.y, 0);
         rigidBody.AddForce(new Vector2(0, GetYAxis() * VerticalMultiplier));
+
     }
 }
