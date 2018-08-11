@@ -2,18 +2,9 @@
 
 public abstract class Movement : MonoBehaviour 
 {
-    public float MAX_SPEED = 3f;
-    public float SpeedMultiplier;
-    public float VerticalMultiplier;
-    public abstract void Move(Rigidbody2D rigidbody);
+    public Controller2D controller;
 
-    public float GetXAxis()
-    {
-        return (Input.GetAxisRaw("Horizontal"));
-    }
 
-    public float GetYAxis()
-    {
-        return (Input.GetAxisRaw("Vertical"));
-    }
+    public abstract void transitionInto();
+    public abstract void Move();
 }
