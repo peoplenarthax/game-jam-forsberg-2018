@@ -19,13 +19,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+       // if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetAxis("Horizontal") > 0)
         {
             spriterenderer.flipX = false;
 
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        //if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetAxis("Horizontal") < 0)
         {
             spriterenderer.flipX = true;
 
