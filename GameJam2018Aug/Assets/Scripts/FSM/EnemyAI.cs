@@ -47,6 +47,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("PLAYER FOUND");
             childSprite.sprite = normalSprite;
             ChangeState(enemyWanderState);
         }
