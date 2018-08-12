@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/JonasTestScene.unity
+    guid: 401c17f9150e2c040b698057efb94e7f
   m_configObjects: {}
