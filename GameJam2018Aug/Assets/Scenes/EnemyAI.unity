@@ -226,50 +226,46 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.1
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalPosition.y
       value: -7.6
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalPosition.z
       value: -0.011199173
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4449577760823540, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 4744130285459012, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114917662514333004, guid: 5e0f23035b26bd540b60640839358a3b,
+    - target: {fileID: 114984596007941508, guid: 5e0f23035b26bd540b60640839358a3b,
         type: 2}
       propertyPath: ChaseTarget
       value: 
       objectReference: {fileID: 418049049}
-    - target: {fileID: 1177774518133722, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
+    - target: {fileID: 1960698085246102, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1440315191411384, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
-      propertyPath: m_TagString
-      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e0f23035b26bd540b60640839358a3b, type: 2}
@@ -623,36 +619,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1446956281 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1440315191411384, guid: 5e0f23035b26bd540b60640839358a3b,
-    type: 2}
-  m_PrefabInternal: {fileID: 707581714}
---- !u!61 &1446956283
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1446956281}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.028110802, y: -0.09844875}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.12, y: 2.12}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3891076, y: 1.0230052}
-  m_EdgeRadius: 0
 --- !u!1 &1552186685
 GameObject:
   m_ObjectHideFlags: 0
