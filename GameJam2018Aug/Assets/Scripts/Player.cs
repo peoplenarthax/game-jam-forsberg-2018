@@ -9,9 +9,12 @@ public class Player : MonoBehaviour
     Movement currentMovementController;
     public Animator anim;
     public SpriteRenderer spriterenderer;
+    private Transform pSystem;
 
     void Start()
     {
+        pSystem = transform.Find("Particles");
+        pSystem.gameObject.SetActive(false);
         currentMovementController = GetComponent<LandMovement>();
         anim = GetComponent<Animator>();
         spriterenderer = GetComponent<SpriteRenderer>();
@@ -38,6 +41,7 @@ public class Player : MonoBehaviour
 
         if (collision.tag == "water")
         {
+            pSystem.gameObject.SetActive(true);
             anim.SetBool("inWater", true);
             currentMovementController = GetComponent<WaterMovement>();
         }
@@ -48,6 +52,7 @@ public class Player : MonoBehaviour
 
         if (collision.tag == "water")
         {
+            pSystem.gameObject.SetActive(false);
             anim.SetBool("inWater", false);
             currentMovementController = GetComponent<LandMovement>();
             currentMovementController.transitionInto();

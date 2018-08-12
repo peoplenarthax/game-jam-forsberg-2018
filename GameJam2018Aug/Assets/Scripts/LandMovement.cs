@@ -23,6 +23,8 @@ public class LandMovement : Movement
     Vector3 velocity;
     float velocityXSmoothing;
     bool fromWater = false;
+    private Vector3 originalSize;
+    private Vector3 jumpingSize;
 
     void Start()
     {
@@ -30,6 +32,9 @@ public class LandMovement : Movement
         controller = GetComponent<Controller2D>();
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
+        originalSize = transform.localScale;
+        jumpingSize = originalSize + new Vector3(0, 0.08F, 0);
+
     }
 
     public override void transitionInto()
@@ -58,8 +63,6 @@ public class LandMovement : Movement
         {
 
             // Removing from frame time
-            Debug.Log(timeToRecoverFromWater);
-
             timeToRecoverFromWater -= Time.deltaTime;
 
         }
@@ -102,6 +105,7 @@ public class LandMovement : Movement
         if (controller.collisions.above || controller.collisions.below)
         {
             // Stop player if on ground or roof
+            transform.localScale = originalSize;
             velocity.y = 0;
         }
 
@@ -133,10 +137,10 @@ public class LandMovement : Movement
             if (controller.collisions.below)
             {
                 velocity.y = jumpVelocity;
+                transform.localScale = jumpingSize;
             }
         }
-
-        Debug.Log(velocity.y);
+        
         if (fromWater && timeToRecoverFromWater <= 0)
         {
             
