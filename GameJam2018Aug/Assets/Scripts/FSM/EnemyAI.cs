@@ -48,7 +48,6 @@ public class EnemyAI : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             childSprite.sprite = normalSprite;
-
             ChangeState(enemyWanderState);
         }
     }
