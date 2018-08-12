@@ -325,8 +325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28a193dd82e5d1409dce4fa6a2661ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifes: 0
   anim: {fileID: 0}
   spriterenderer: {fileID: 0}
+  lifeSprite: {fileID: 0}
 --- !u!61 &93000769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8211,6 +8213,7 @@ GameObject:
   - component: {fileID: 1493033598}
   - component: {fileID: 1493033597}
   - component: {fileID: 1493033596}
+  - component: {fileID: 1493033599}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8278,6 +8281,28 @@ Transform:
   m_Father: {fileID: 93000771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493033599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1493033595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/MainTheme
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1546744957
 GameObject:
   m_ObjectHideFlags: 0
