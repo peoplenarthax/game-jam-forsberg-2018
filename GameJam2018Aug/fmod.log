@@ -7,8 +7,13 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+<<<<<<< HEAD
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
 [LOG] AsyncManager::init                       : manager 000000000F6FE208 isAsync 1 updatePeriod 0.02
+=======
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x174332208 isAsync 1 updatePeriod 0.02
+>>>>>>> c521b3f0491f2681c12db6638f45f64e28976962
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -18,7 +23,33 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Profile::init                            : Profiler listening on port: 9264
+<<<<<<< HEAD
 [ERR] RuntimeBankModel::openFile               : Failed to open file 'Desktop/.strings.bank'
+=======
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSound                     : filename = Assets/Soundbanks/Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x1510d6a98 : node = 0x1510b1eb0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x163f02928.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1510d6a98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Soundbanks/Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 892736
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x1510b1fc8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='WaterWorldMusic02_theme_120BPM_16bars_Stereo', format=2, channels=2, frequency=48000, lengthbytes=338912, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528168.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1510d6a98
+[LOG] SoundI::getSubSound                      : sound 0x1510d6a98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : WaterWorldMusic02_theme_120BPM_16bars_Stereo (0x1510d6a98)
+[LOG] SoundI::release                          :     WaterWorldMusic02_theme_120BPM_16bars_Stereo (0x114dfb358)
+[LOG] SoundI::release                          :     WaterWorldMusic02_theme_120BPM_16bars_Stereo (0x114dfb4e8)
+>>>>>>> c521b3f0491f2681c12db6638f45f64e28976962
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
