@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 50795640736077784}
   - component: {fileID: 95196015230298856}
   m_Layer: 11
-  m_Name: MainPlayer 1
+  m_Name: Alien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

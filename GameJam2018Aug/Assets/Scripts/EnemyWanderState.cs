@@ -55,6 +55,5 @@ public class EnemyWanderState : EnemyAIState {
 
     public override void OnStateExit(EnemyAI enemyAI)
     {
-        throw new System.NotImplementedException();
     }
 }
